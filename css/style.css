@@ -1,0 +1,36 @@
+body {
+  background: #1e1f26;
+  background-image: url(https://burst.shopifycdn.com/photos/coding-on-laptop.jpg);
+  background-size: auto 100vh;
+  font-family: Lucida Sans Unicode, sans-serif;
+  height: 100vh;
+}
+
+.menu {
+  background-color: white;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+a {
+  color: #1e1f26;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-title,
+.site-subtitle {
+  color: whitesmoke;
+  text-align: center;
+}
