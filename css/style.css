@@ -6,10 +6,10 @@
 }
 
 body {
-  background: inherit;
-  background-image: url(../img/bg.jpg);
+  background: url(../img/bg.jpg);
   background-size: auto 100vh;
-  font-family: Lucida Sans Unicode, sans-serif;
+  background-color: #fff;
+  font-family: 'Fira Code', monospace, 'Lucida Sans Unicode', sans-serif;
   height: 100vh;
   font-size: 12px;
 }
@@ -35,6 +35,10 @@ header {
   height: 100vh;
 }
 
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 a {
   color: #1e1f26;
   text-decoration: none;
@@ -42,22 +46,24 @@ a {
 
 a:hover {
   font-weight: 600;
-  border-bottom: 3px solid #1e1f26;
   text-decoration: none;
 }
 
-figure {
-  padding: 15px;
-}
+/* figure {
+  padding: 10px;
+} */
 
 figcaption {
-  position: relative;
-  text-align: center;
   background-color: #1e1f2699;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  margin-top: -8px;
   color: whitesmoke;
+  margin-top: -10px;
+  padding: 10px;
+}
+
+footer {
+  background-color: ivory;
 }
 
 .menu {
@@ -66,6 +72,12 @@ figcaption {
   width: 100vw;
   top: 0;
   max-height: 65px;
+}
+
+@media (min-width: 575px) {
+  .menu {
+    height: 65px;
+  }
 }
 
 .menu ul {
@@ -83,10 +95,16 @@ figcaption {
   padding: 10px 20px;
 }
 
+.menu a:hover {
+  border-bottom: 3px solid;
+  display: block;
+  padding: 10px 20px;
+}
+
 .header-title {
   background-color: #1e1f2699;
   border-radius: 8px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .site-title,
@@ -96,11 +114,12 @@ figcaption {
 }
 
 .site-title {
-  font-size: 3.5em;
+  font-size: 4em;
 }
 
 .site-subtitle {
   font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 .header-link {
@@ -114,45 +133,76 @@ figcaption {
 
 .portfolio {
   margin: 0px auto;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  height: 100vh;
 }
 
-.portfolio-title{
+.portfolio-title {
   background-color: #1e1f2699;
-  display: block;
-  width: 100vw;
-  height: 45px;
-  max-height: 65px;
-  padding: 10px;
   color: whitesmoke;
+  font-size: 1.5em;
+  display: block;
+  max-height: 65px;
+  height: 45px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.portfolio-itens {
+/* c/ Flexbox */
+/* .portfolio-itens {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   padding: 20px;
-}
+} 
 
 @media (min-width: 768px) {
-  .portfolio-itens {
+  .portfolio-items {
     display: flex;
     flex-flow: row wrap;
-    flex-grow: 2;
     justify-content: space-around;
     align-items: flex-start;
     padding: 20px;
   }
+} */
+
+
+/* c/ Grid */
+.portfolio-items {
+  display: grid;
+  gap: 3em;
+  justify-content: center;
+  margin: 0 auto;
 }
 
+@media (min-width: 660px) {
+  .portfolio-items {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
 
+@media (min-width: 1010px) {
+  .portfolio-items {
+    align-content: center;
+    grid-template-columns: repeat(3, 300px);
+  }
+}
+
+@media (min-width: 1450px) {
+  .portfolio-items {
+    align-content: center;
+    grid-template-columns: repeat(4, 300px);
+  }
+}
+
+.portfolio-items {
+  width: 300px;
+  text-align: center;
+}
 
 .img-portfolio {
-  width: 280px;
+  width: 300px;
   height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
-
-
-
-
