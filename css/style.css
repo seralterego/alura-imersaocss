@@ -1,13 +1,71 @@
+/* soft reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: #1e1f26;
-  background-image: url(https://burst.shopifycdn.com/photos/coding-on-laptop.jpg);
+  background: inherit;
+  background-image: url(../img/bg.jpg);
   background-size: auto 100vh;
   font-family: Lucida Sans Unicode, sans-serif;
   height: 100vh;
+  font-size: 12px;
+}
+
+/* Estilos carregam com tela com pelo menos 400px */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Estilos carregam com tela com pelo menos 600px */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  color: #1e1f26;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 600;
+  border-bottom: 3px solid #1e1f26;
+  text-decoration: none;
+}
+
+figure {
+  padding: 15px;
+}
+
+figcaption {
+  position: relative;
+  text-align: center;
+  background-color: #1e1f2699;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-top: -8px;
+  color: whitesmoke;
 }
 
 .menu {
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  max-height: 65px;
 }
 
 .menu ul {
@@ -20,13 +78,15 @@ body {
   list-style: none;
 }
 
-a {
-  color: #1e1f26;
-  text-decoration: none;
+.menu a {
+  display: block;
+  padding: 10px 20px;
 }
 
-a:hover {
-  text-decoration: underline;
+.header-title {
+  background-color: #1e1f2699;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .site-title,
@@ -34,3 +94,65 @@ a:hover {
   color: whitesmoke;
   text-align: center;
 }
+
+.site-title {
+  font-size: 3.5em;
+}
+
+.site-subtitle {
+  font-size: 1.5em;
+}
+
+.header-link {
+  color: #a1aeb6;
+  text-align: center;
+  display: block;
+  font-weight: 800;
+  text-decoration: dashed;
+  font-size: 1em;
+}
+
+.portfolio {
+  margin: 0px auto;
+  padding-bottom: 20px;
+}
+
+.portfolio-title{
+  background-color: #1e1f2699;
+  display: block;
+  width: 100vw;
+  height: 45px;
+  max-height: 65px;
+  padding: 10px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.portfolio-itens {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .portfolio-itens {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 2;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+}
+
+
+
+.img-portfolio {
+  width: 280px;
+  height: 200px;
+}
+
+
+
+
