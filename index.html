@@ -4,32 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sérgio Leitão</title>
-
+  <title>Sérgio Leitão | Desenvolvedor Front-end </title>
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Josefin+Sans&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/57eab43848.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <nav class="menu">
       <ul>
-        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="#sct-sobre">Sobre</a></li>
         <li><a href="#sct-portfolio">Portfólio</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#sct-contato">Contato</a></li>
       </ul>
     </nav>
     <div class="header-title">
       <h1 class="site-title">Sérgio Leitão</h1>
-      <h2 class="site-subtitle">Front-end Developer</h2>
+      <h2 class="site-subtitle">Desenvolvedor Front-end</h2>
+      <ul class="site-social">
+        <li><a href="https://github.com/seralterego"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/sergiomirandaleitao/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/seralterego"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/seralterego/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/sergio.mleitao"><i class="fab fa-facebook"></i></a></li>
+      </ul>
     </div>
   </header>
 
-  <section class="portfolio" id="sct-portfolio">
-    <div class="portfolio-title">
+  <!-- <section class="sobre" id="sct-sobre">
+    <div class="sobre-title">
       <h2>Portfólio</h2>
     </div>
-    <div class="portfolio-items">
+    <div class="sobre-itens">
       <figure>
         <a class="portfolio-link" href="./pages/eCommerce.html">
           <img class="img-portfolio" src="./img/eCommerce.jpg" alt="Foto da Shopify Partner do Burst">
@@ -55,9 +66,81 @@
         </a>
       </figure>
     </div>
+  </section> -->
+
+  <section class="portfolio" id="sct-portfolio">
+    <div class="portfolio-title">
+      <h2>Portfólio</h2>
+    </div>
+    <div class="portfolio-itens">
+      <figure>
+        <a class="portfolio-link" href="./pages/eCommerce.html">
+          <img class="img-portfolio" src="./img/eCommerce.jpg" alt="Foto da Shopify Partner do Burst">
+          <figcaption>eCommerce</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a class="portfolio-link" href="./pages/mobile.html">
+          <img class="img-portfolio" src="./img/mobile.jpg" alt="Foto de Lisa Fotios no Pexels">
+          <figcaption>Mobile</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a class="portfolio-link" href="./pages/webDesign.html">
+          <img class="img-portfolio" src="./img/webDesign.jpg" alt="Foto de picjumbo.com no Pexels">
+          <figcaption>Web Design</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a class="portfolio-link" href="./pages/projetosPessoais.html">
+          <img class="img-portfolio" src="./img/projetosPessoais.jpg" alt="Foto de Pixabay no Pexels">
+          <figcaption>Projetos Pessoais</figcaption>
+        </a>
+      </figure>
+    </div>
   </section>
 
-  <footer>
+  <section class="contato" id="sct-contato">
+    <div class="contato-title">
+      <h2>Contato</h2>
+    </div>
+    <div class="contato-itens">
+      <div class="contato-form">
+        <div class="contato-column">
+          <img class="img-contato" src="./img/contact.jpg" alt="Foto de Volodymyr Hryshchenko no Unsplash">
+        </div>
+        <div class="contato-column">
+          <form action="#">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="firstname" placeholder="Diga-me quem tu és...">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+              <option>E o que você deseja?</option>
+              <option value="eCommerce">E-commerce</option>
+              <option value="mobile">Mobile</option>
+              <option value="webDesign">Web Design</option>
+              <option value="projetosPessoais">Projetos Pessoais</option>
+            </select>
+            <label for="mensagem">Escreva sua mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Dê mais detalhes sobre o que precisa..." style="height:300px"></textarea>
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="rodape-itens">
+      <p>feito com muito ❤ por Sérgio Leitão</p>
+      <ul>
+        <li><a href="https://github.com/seralterego"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/sergiomirandaleitao/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/seralterego"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/seralterego/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/sergio.mleitao"><i class="fab fa-facebook"></i></a></li>
+      </ul>
+    </div>
 
   </footer>
 
@@ -69,5 +152,6 @@
 <!-- Foto Mobile de Lisa Fotios no <a href="https://www.pexels.com/pt-br/foto/android-androide-aparelho-borrao-1092644/">Pexels</a> -->
 <!-- Foto Web Design de picjumbo.com no <a href="https://www.pexels.com/pt-br/foto/borrao-close-concentracao-desenho-196645/">Pexels</a> -->
 <!-- Foto Projetos Pessoais de Pixabay no <a href="https://www.pexels.com/pt-br/foto/abstrato-acreditar-analise-balao-de-fala-355952/">Pexels</a> -->
+<!-- Foto Contato de Volodymyr Hryshchenko no <a href="https://unsplash.com/photos/V5vqWC9gyEU">Unsplash</a> -->
 
 </html>
