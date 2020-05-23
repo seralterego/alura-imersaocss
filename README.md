@@ -4,6 +4,6 @@
 
 ---
 
-:link: **CodePen**: <https://codepen.io/seralterego/pen/VwvGpRr>
-:link: **repo GitHub**: <https://github.com/seralterego/alura-imersaocss> (você está aqui!) :wink:
-:link: **GitHub Pages**: <https://seralterego.github.io/alura-imersaocss/>
+- :link: **CodePen**: <https://codepen.io/seralterego/pen/VwvGpRr> (só usado na 1ª aula)
+- :link: **repo GitHub**: <https://github.com/seralterego/alura-imersaocss> (você está aqui!) :wink:
+- :link: **GitHub Pages**: <https://seralterego.github.io/alura-imersaocss/>
