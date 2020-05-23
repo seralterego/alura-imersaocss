@@ -8,9 +8,9 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="./assets/fonts/googleFonts.css" rel="stylesheet">
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/57eab43848.js" crossorigin="anonymous"></script>
+  <script src="./assets/fonts/fontawesome.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,113 +23,198 @@
         <li><a href="#sct-contato">Contato</a></li>
       </ul>
     </nav>
-    <div class="header-title">
-      <h1 class="site-title">Sérgio Leitão</h1>
-      <h2 class="site-subtitle">Desenvolvedor Front-end</h2>
-      <ul class="site-social">
-        <li><a href="https://github.com/seralterego"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/sergiomirandaleitao/"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://twitter.com/seralterego"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="https://www.instagram.com/seralterego/"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com/sergio.mleitao"><i class="fab fa-facebook"></i></a></li>
+    <div class="header-itens">
+      <h1 class="header-title">Sérgio Leitão</h1>
+      <h2 class="header-subtitle">Desenvolvedor Front-end</h2>
+      <ul class="header-social">
+        <li><a class="tooltip-bottom" href="https://github.com/seralterego" data-tooltip='"Show me the code!"'><i
+              class="fab fa-github"></i></a></li>
+        <li><a class="tooltip-bottom" href="https://www.linkedin.com/in/sergiomirandaleitao/"
+            data-tooltip='"A conduta faz o homem."'><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="tooltip-bottom" href="https://twitter.com/seralterego" data-tooltip='"Tiro, porrada e bomba!"'><i
+              class="fab fa-twitter"></i></a></li>
+        <li><a class="tooltip-bottom" href="https://www.instagram.com/seralterego/"
+            data-tooltip='"Mais do que o olho pode ver"'><i class="fab fa-instagram"></i></a></li>
+        <li><a class="tooltip-bottom" href="https://www.facebook.com/sergio.mleitao"
+            data-tooltip='"Terra de ninguém"'><i class="fab fa-facebook"></i></a></li>
       </ul>
     </div>
   </header>
-
-  <!-- <section class="sobre" id="sct-sobre">
+  <!-- Sobre -->
+  <section class="sobre" id="sct-sobre">
     <div class="sobre-title">
-      <h2>Portfólio</h2>
+      <h2>Sobre</h2>
     </div>
     <div class="sobre-itens">
-      <figure>
-        <a class="portfolio-link" href="./pages/eCommerce.html">
-          <img class="img-portfolio" src="./img/eCommerce.jpg" alt="Foto da Shopify Partner do Burst">
-          <figcaption>eCommerce</figcaption>
-        </a>
+      <figure class="sobre-img">
+        <img class="img-sobre" src="./img/profile.jpg" alt="Imagem de perfil de Sérgio Leitão"
+          title="Oi, eu sou o Leitão!">
       </figure>
-      <figure>
-        <a class="portfolio-link" href="./pages/mobile.html">
-          <img class="img-portfolio" src="./img/mobile.jpg" alt="Foto de Lisa Fotios no Pexels">
-          <figcaption>Mobile</figcaption>
-        </a>
-      </figure>
-      <figure>
-        <a class="portfolio-link" href="./pages/webDesign.html">
-          <img class="img-portfolio" src="./img/webDesign.jpg" alt="Foto de de picjumbo.com no Pexels">
-          <figcaption>Web Design</figcaption>
-        </a>
-      </figure>
-      <figure>
-        <a class="portfolio-link" href="./pages/projetosPessoais.html">
-          <img class="img-portfolio" src="./img/projetosPessoais.jpg" alt="Foto de de Pixabay no Pexels">
-          <figcaption>Projetos Pessoais</figcaption>
-        </a>
-      </figure>
+      <div class="sobre-texto">
+        <p>Meu nome é Sérgio e eu sou Desenvolvedor front-end. 👨‍💻</p>
+        <p>Eu sou do Ceará, mas já vivo em SP desde os 8 anos de idade! Atualmente moro na cidade de Itapevi-SP. Sou
+          casado, tenho dois filhos e dois enteados. 💌</p>
+        <p>Minha formação é em Comunicação Social, Publicidade e Propaganda. Depois de alguns freelancers e desventuras
+          no ramo de atendimento e vendas, me tornei estagiário na <a class="sobre-link" href="#" _target="blank">Europ
+            Assistance</a> onde atuei como assistente administrativo, supervisor de operações de atendimento e analista
+          de <a class="sobre-link" href="#" _target="blank">Design Thinking</a> (que envolveram atividades de <a
+            class="sobre-link" href="#" _target="blank">mapeamento de processos</a>, <a class="sobre-link" href="#"
+            _target="blank">comunicação</a>, <a class="sobre-link" href="#" _target="blank">desenvolvimento web</a> e <a
+            class="sobre-link" href="#" _target="blank">gestão de conteúdo</a>). 🎆</p>
+        <p>Depois de 10 anos, em 2017, sai de lá para atuar como consultor de processos na <a class="sobre-link"
+            href="#" _target="blank"></a>Via Varejo. O ano mais intenso da minha vida profissional! :crânio:
+          Mas como, desde 2009 me aventuro no <a class="sobre-link" href="#" _target="blank">Blogger</a> criando
+          conteúdo, sempre tive um pézinho ali no front-end. 💡</p>
+        <hr>
+        <p><strong>5 fatos curiosos sobre mim:</strong></p>
+        <ul>
+          <li><i class="fas fa-thumbtack"></i>&nbsp;Tenho toque, uma verdadeira faca de dois gumes para o bem e para o
+            mal; 😭</li>
+          <li><i class="fas fa-thumbtack"></i>&nbsp;Aprendi inglês graças aos <a class="sobre-link" href="#"
+              _target="blank">games</a>, <a class="sobre-link" href="#" _target="blank">séries</a> e <a
+              class="sobre-link" href="#" _target="blank">filmes</a>, paixões que tenho junto da <a class="sobre-link"
+              href="#" _target="blank">música</a>; 🎮</li>
+          <li><i class="fas fa-thumbtack"></i>&nbsp;Também me arrisco nas escritas e tenho escondidos mais de 100 textos
+            que escrevi desde os 12 anos. O meu <a class="sobre-link" href="#" _target="blank">blog ainda existe</a>,
+            mas está em stand-by; 📓</li>
+          <li><i class="fas fa-thumbtack"></i>&nbsp;Apesar dos quilinhos a mais, sou apaixonado por <a
+              class="sobre-link" href="#" _target="blank">esportes</a>, em especial, Futebol e <a class="sobre-link"
+              href="#" _target="blank">Fórmula 1</a>; ⚽</li>
+          <li><i class="fas fa-thumbtack"></i>&nbsp;Toco <a class="sobre-link" href="#" _target="blank">violão</a>, <a
+              class="sobre-link" href="#" _target="blank">contra-baixo</a> e bateria, tendo aprendido de forma
+            autodidata e já tive três bandas, fora o período que fui músico na igreja 🙏; 🎸</p>
+          </li>
+        </ul>
+        <hr>
+        <p>Esse site foi construído com muito ❤ durante a <a class="sobre-link" href="https://alura.com.br/imersao-css"
+            _target="blank">Imersão CSS da Aluuuuuraaaaaa</a><small> <b>#GavetaFeelings</b></small></p>
+      </div>
     </div>
-  </section> -->
-
+  </section>
+  <!-- Portfólio -->
   <section class="portfolio" id="sct-portfolio">
     <div class="portfolio-title">
       <h2>Portfólio</h2>
     </div>
-    <div class="portfolio-itens">
+    <!-- <div class="portfolio-itens">
       <figure>
-        <a class="portfolio-link" href="./pages/eCommerce.html">
+        <a href="./pages/eCommerce.html">
           <img class="img-portfolio" src="./img/eCommerce.jpg" alt="Foto da Shopify Partner do Burst">
           <figcaption>eCommerce</figcaption>
         </a>
       </figure>
       <figure>
-        <a class="portfolio-link" href="./pages/mobile.html">
+        <a href="./pages/mobile.html">
           <img class="img-portfolio" src="./img/mobile.jpg" alt="Foto de Lisa Fotios no Pexels">
           <figcaption>Mobile</figcaption>
         </a>
       </figure>
       <figure>
-        <a class="portfolio-link" href="./pages/webDesign.html">
+        <a href="./pages/webDesign.html">
           <img class="img-portfolio" src="./img/webDesign.jpg" alt="Foto de picjumbo.com no Pexels">
           <figcaption>Web Design</figcaption>
         </a>
       </figure>
       <figure>
-        <a class="portfolio-link" href="./pages/projetosPessoais.html">
+        <a href="./pages/projetosPessoais.html">
           <img class="img-portfolio" src="./img/projetosPessoais.jpg" alt="Foto de Pixabay no Pexels">
           <figcaption>Projetos Pessoais</figcaption>
         </a>
       </figure>
+    </div> -->
+    <p class="portfolio-texto">Apresentação (de alguns) dos trabalhos que fiz, sejam no ambito profissional ou com foco em estudos.</p>
+    <div class="portfolio-itens">
+      <div class="flip-card">
+      <div class="portfolio-card">
+        <figure class="card-front">
+          <a href="./pages/eCommerce.html">
+            <img class="img-portfolio" src="./img/eCommerce.jpg" alt="Foto da Shopify Partner do Burst">
+            <figcaption>eCommerce</figcaption>
+          </a>
+        </figure>
+        <div class="card-back">
+          Oi, eu sou a parte de trás :)
+        </div>
+      </div>
+      </div>
+      <div class="flip-card">
+      <div class="portfolio-card">
+        <figure class="card-front">
+          <a href="./pages/eCommerce.html">
+            <img class="img-portfolio" src="./img/eCommerce.jpg" alt="Foto da Shopify Partner do Burst">
+            <figcaption>eCommerce</figcaption>
+          </a>
+        </figure>
+        <div class="card-back">
+          Oi, eu sou a parte de trás :)
+        </div>
+      </div>
+      </div>
+      <div class="flip-card">
+      <div class="portfolio-card">
+        <figure class="card-front">
+          <a href="./pages/eCommerce.html">
+            <img class="img-portfolio" src="./img/eCommerce.jpg" alt="Foto da Shopify Partner do Burst">
+            <figcaption>eCommerce</figcaption>
+          </a>
+        </figure>
+        <div class="card-back">
+          Oi, eu sou a parte de trás :)
+        </div>
+      </div>
+      </div>
+      <div class="flip-card">
+      <div class="portfolio-card">
+        <figure class="card-front">
+          <a href="./pages/eCommerce.html">
+            <img class="img-portfolio" src="./img/eCommerce.jpg" alt="Foto da Shopify Partner do Burst">
+            <figcaption>eCommerce</figcaption>
+          </a>
+        </figure>
+        <div class="card-back">
+          Oi, eu sou a parte de trás :)
+        </div>
+      </div>
+      </div>
     </div>
   </section>
-
+  <!-- Contato -->
   <section class="contato" id="sct-contato">
     <div class="contato-title">
       <h2>Contato</h2>
     </div>
     <div class="contato-itens">
+      <figure>
+        <img class="img-contato" src="./img/contact.jpg" alt="Foto de Volodymyr Hryshchenko na Unsplash">
+        </a>
+      </figure>
+      <p class="contato-texto">Mande sua mensagem! </br> Informações sobre um novo projeto, consulta de disponibilidade
+        ou até mesmo de apoio ao trabalho que está sendo feito. </br> Fique a vontade e seja-bem-vindo!</p>
       <div class="contato-form">
-        <div class="contato-column">
-          <img class="img-contato" src="./img/contact.jpg" alt="Foto de Volodymyr Hryshchenko no Unsplash">
-        </div>
-        <div class="contato-column">
-          <form action="#">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="firstname" placeholder="Diga-me quem tu és...">
-            <label for="assunto">Assunto</label>
-            <select id="assunto" name="assunto">
-              <option>E o que você deseja?</option>
-              <option value="eCommerce">E-commerce</option>
-              <option value="mobile">Mobile</option>
-              <option value="webDesign">Web Design</option>
-              <option value="projetosPessoais">Projetos Pessoais</option>
-            </select>
-            <label for="mensagem">Escreva sua mensagem</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Dê mais detalhes sobre o que precisa..." style="height:300px"></textarea>
-            <input type="submit" value="Enviar">
-          </form>
-        </div>
+        <form action="#" method="post">
+          <label class="etiqueta-form">
+            <input type="text" class="controle-form" required="">
+            <span>Seu Nome</span>
+            <span class="borda"></span>
+          </label>
+          <label class="etiqueta-form">
+            <input type="text" class="controle-form" required="">
+            <span>Seu E-mail</span>
+            <span class="borda"></span>
+          </label>
+          <label class="etiqueta-form">
+            <textarea class="controle-form" required=""></textarea>
+            <span for="">Sua Mensagem</span>
+            <span class="borda"></span>
+          </label>
+          <button class="btn-contato">Enviar
+            <i class="fas fa-arrow-right"></i></i>
+          </button>
+        </form>
       </div>
     </div>
   </section>
-
+  <!-- Rodapé -->
   <footer class="rodape">
     <div class="rodape-itens">
       <p>feito com muito ❤ por Sérgio Leitão</p>
@@ -141,7 +226,6 @@
         <li><a href="https://www.facebook.com/sergio.mleitao"><i class="fab fa-facebook"></i></a></li>
       </ul>
     </div>
-
   </footer>
 
 </body>
@@ -153,5 +237,6 @@
 <!-- Foto Web Design de picjumbo.com no <a href="https://www.pexels.com/pt-br/foto/borrao-close-concentracao-desenho-196645/">Pexels</a> -->
 <!-- Foto Projetos Pessoais de Pixabay no <a href="https://www.pexels.com/pt-br/foto/abstrato-acreditar-analise-balao-de-fala-355952/">Pexels</a> -->
 <!-- Foto Contato de Volodymyr Hryshchenko no <a href="https://unsplash.com/photos/V5vqWC9gyEU">Unsplash</a> -->
+<!-- Tooltip Styles by Chris Bracco acessível no nesse <a href="https://chrisbracco.com/a-simple-css-tooltip/ target="_blank">link</a> -->
 
 </html>
