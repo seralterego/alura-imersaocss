@@ -2,6 +2,8 @@
 
 :computer: Repositório criado para publicação das tarefas propostas no workshop Imersão CSS, utilizando HTML e CSS.
 
+**obs**: atualizações com JavaScript além do Workshop.
+
 ---
 
 - :link: **CodePen**: <https://codepen.io/seralterego/pen/VwvGpRr> (só usado na 1ª aula)
